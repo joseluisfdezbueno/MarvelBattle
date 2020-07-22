@@ -11,7 +11,11 @@ import RxCocoa
 import RxSwift
 import MarvelCore
 
-class ArenaViewController: UIViewController {
+protocol ArenaViewControllerProtocol: UIViewController {
+    func presentBattleResultView(result: BattleResultType)
+}
+
+class ArenaViewController: UIViewController, ArenaViewControllerProtocol {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var characterOneTitleLabel: UILabel!

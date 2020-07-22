@@ -14,11 +14,10 @@ protocol CharacterProfilePresenterProtocol: class {
 
 class CharacterProfilePresenter: CharacterProfilePresenterProtocol {
 
-    private weak var view: CharacterProfileViewController!
+    private weak var view: CharacterProfileViewControllerProtocol!
     var character: CharacterModel?
-    
 
-    init(view: CharacterProfileViewController) {
+    init(view: CharacterProfileViewControllerProtocol) {
         self.view = view
     }
     

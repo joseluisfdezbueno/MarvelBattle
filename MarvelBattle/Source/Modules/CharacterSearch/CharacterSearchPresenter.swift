@@ -17,7 +17,7 @@ protocol CharacterSearchPresenterProtocol: class {
 
 class CharacterSearchPresenter: CharacterSearchPresenterProtocol {
 
-    private weak var view: CharacterSearchViewController!
+    private weak var view: CharacterSearchViewControllerProtocol!
     private lazy var charactersService: CharactersServiceProtocol = DefaultCoreFactory.shared.getCharactersService()
     private weak var selectableCharacterDelegate: SelectableCharacterDelegate?
     private let disposeBag = DisposeBag()
@@ -29,7 +29,7 @@ class CharacterSearchPresenter: CharacterSearchPresenterProtocol {
     private var isLoading: Bool = false
     var characters: [CharacterModel] = []
 
-    init(view: CharacterSearchViewController, delegate: SelectableCharacterDelegate?) {
+    init(view: CharacterSearchViewControllerProtocol, delegate: SelectableCharacterDelegate?) {
         self.view = view
         self.selectableCharacterDelegate = delegate
     }
@@ -55,7 +55,7 @@ class CharacterSearchPresenter: CharacterSearchPresenterProtocol {
                 self.offset += self.limit
                 self.isThereMoreCharacters = characters.count == self.limit
                 self.characters.append(contentsOf: characters)
-                self.view.refreshCharacters(characters: self.characters)
+                self.view.refreshCharacters()
             }, onError: { (error) in
                 self.view.showDefaultAlert()
             }, onCompleted: {

@@ -11,7 +11,14 @@ import RxCocoa
 import RxSwift
 import MarvelCore
 
-class CharacterSearchViewController: UIViewController {
+protocol CharacterSearchViewControllerProtocol: UIViewController {
+    func refreshCharacters()
+    func showDefaultAlert()
+    func dismissView()
+    func pushToCharacterProfileView(character: CharacterModel)
+}
+
+class CharacterSearchViewController: UIViewController, CharacterSearchViewControllerProtocol {
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
@@ -77,7 +84,7 @@ class CharacterSearchViewController: UIViewController {
         self.tableView.register(UINib(nibName: CharacterTableViewCell.id, bundle: nil), forCellReuseIdentifier: CharacterTableViewCell.id)
     }
     
-    func refreshCharacters(characters: [CharacterModel]) {
+    func refreshCharacters() {
         DispatchQueue.main.async {
             self.tableView.reloadData()
             self.tableView.tableFooterView?.removeFromSuperview()

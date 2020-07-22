@@ -9,7 +9,12 @@
 import UIKit
 import MarvelCore
 
-class RankingViewController: UIViewController {
+protocol RankingViewControllerProtocol: UIViewController {
+    func realoadList()
+    func pushToCharacterProfileView(character: CharacterModel)
+}
+
+class RankingViewController: UIViewController, RankingViewControllerProtocol {
 
     @IBOutlet weak var tableView: UITableView!
     

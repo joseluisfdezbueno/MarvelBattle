@@ -16,11 +16,11 @@ protocol RankingPresenterProtocol: class {
 class RankingPresenter: RankingPresenterProtocol {
 
     private lazy var charactersService: CharactersServiceProtocol = DefaultCoreFactory.shared.getCharactersService()
-    weak private var view: RankingViewController!
+    weak private var view: RankingViewControllerProtocol!
     
     var characters: [CharacterModel] = []
 
-    init(view: RankingViewController) {
+    init(view: RankingViewControllerProtocol) {
         self.view = view
     }
     

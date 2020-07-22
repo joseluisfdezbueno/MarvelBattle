@@ -14,28 +14,28 @@ class DefaultViewFactory: ViewFactoryProtocol {
     
     private init() { }
     
-    func getCharacterSearchView(selectableCharacterDelegate: SelectableCharacterDelegate? = nil) -> CharacterSearchViewController {
+    func getCharacterSearchView(selectableCharacterDelegate: SelectableCharacterDelegate? = nil) -> CharacterSearchViewControllerProtocol {
         let view = CharacterSearchViewController()
         let presenter = CharacterSearchPresenter(view: view, delegate: selectableCharacterDelegate)
         view.presenter = presenter
         return view
     }
     
-    func getArenaView() -> ArenaViewController {
+    func getArenaView() -> ArenaViewControllerProtocol {
         let view = ArenaViewController()
         let presenter = ArenaPresenter(view: view)
         view.presenter = presenter
         return view
     }
     
-    func getRankingView() -> RankingViewController {
+    func getRankingView() -> RankingViewControllerProtocol {
         let view = RankingViewController()
         let presenter = RankingPresenter(view: view)
         view.presenter = presenter
         return view
     }
     
-    func getCharacterProfileView(character: CharacterModel) -> CharacterProfileViewController {
+    func getCharacterProfileView(character: CharacterModel) -> CharacterProfileViewControllerProtocol {
         let view = CharacterProfileViewController()
         let presenter = CharacterProfilePresenter(view: view)
         presenter.character = character
@@ -43,7 +43,7 @@ class DefaultViewFactory: ViewFactoryProtocol {
         return view
     }
     
-    func getBattleResultView(battleResult: BattleResultType) -> BattleResultViewController {
+    func getBattleResultView(battleResult: BattleResultType) -> BattleResultViewControllerProtocol {
         let view = BattleResultViewController()
         let presenter = BattleResultPresenter(view: view, battleResult: battleResult)
         view.presenter = presenter

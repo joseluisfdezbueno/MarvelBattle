@@ -26,7 +26,7 @@ class BottomMenuTabController: UITabBarController {
         let characterSearchVC = DefaultViewFactory.shared.getCharacterSearchView()
         let arenaVC = DefaultViewFactory.shared.getArenaView()
         let rankingVC = DefaultViewFactory.shared.getRankingView()
-        let controllers = [characterSearchVC, arenaVC, rankingVC]
+        let controllers: [UIViewController] = [characterSearchVC, arenaVC, rankingVC]
 
         characterSearchVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
         characterSearchVC.tabBarItem.setValue("search_view_title".localized(), forKey: "internalTitle")

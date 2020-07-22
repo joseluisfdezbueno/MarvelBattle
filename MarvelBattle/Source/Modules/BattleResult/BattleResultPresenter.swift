@@ -14,10 +14,10 @@ protocol BattleResultPresenterProtocol: class {
 
 class BattleResultPresenter: BattleResultPresenterProtocol {
 
-    private weak var view: BattleResultViewController!
+    private weak var view: BattleResultViewControllerProtocol!
     private var battleResult: BattleResultType
 
-    init(view: BattleResultViewController, battleResult: BattleResultType) {
+    init(view: BattleResultViewControllerProtocol, battleResult: BattleResultType) {
         self.view = view
         self.battleResult = battleResult
     }

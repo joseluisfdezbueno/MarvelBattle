@@ -10,10 +10,10 @@ import MarvelCore
 
 protocol ViewFactoryProtocol {
 
-    func getCharacterSearchView(selectableCharacterDelegate: SelectableCharacterDelegate?) -> CharacterSearchViewController
-    func getArenaView() -> ArenaViewController
-    func getRankingView() -> RankingViewController
-    func getCharacterProfileView(character: CharacterModel) -> CharacterProfileViewController
-    func getBattleResultView(battleResult: BattleResultType) -> BattleResultViewController
+    func getCharacterSearchView(selectableCharacterDelegate: SelectableCharacterDelegate?) -> CharacterSearchViewControllerProtocol
+    func getArenaView() -> ArenaViewControllerProtocol
+    func getRankingView() -> RankingViewControllerProtocol
+    func getCharacterProfileView(character: CharacterModel) -> CharacterProfileViewControllerProtocol
+    func getBattleResultView(battleResult: BattleResultType) -> BattleResultViewControllerProtocol
 
 }

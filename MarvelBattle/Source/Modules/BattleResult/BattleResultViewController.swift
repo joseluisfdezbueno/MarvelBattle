@@ -10,7 +10,9 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class BattleResultViewController: UIViewController {
+protocol BattleResultViewControllerProtocol: UIViewController { }
+
+class BattleResultViewController: UIViewController, BattleResultViewControllerProtocol {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var winnerLabel: UILabel!

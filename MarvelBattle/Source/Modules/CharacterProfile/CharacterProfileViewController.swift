@@ -8,7 +8,9 @@
 
 import UIKit
 
-class CharacterProfileViewController: UIViewController {
+protocol CharacterProfileViewControllerProtocol: UIViewController { }
+
+class CharacterProfileViewController: UIViewController, CharacterProfileViewControllerProtocol {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionTextView: UITextView!

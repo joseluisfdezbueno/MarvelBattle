@@ -15,9 +15,9 @@ protocol ArenaPresenterProtocol: class {
 class ArenaPresenter: ArenaPresenterProtocol {
     
     private lazy var charactersService: CharactersServiceProtocol = DefaultCoreFactory.shared.getCharactersService()
-    weak private var view: ArenaViewController!
+    weak private var view: ArenaViewControllerProtocol!
 
-    init(view: ArenaViewController) {
+    init(view: ArenaViewControllerProtocol) {
         self.view = view
     }
 
