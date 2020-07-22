@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArenaViewController" customModule="MarvelBattle" customModuleProvider="target">
+            <connections>
+                <outlet property="characterOneSelectTextField" destination="K9U-Yx-uGc" id="rn9-Z0-Qwp"/>
+                <outlet property="characterOneTitleLabel" destination="XFc-jn-3K4" id="8my-du-yxg"/>
+                <outlet property="characterSecondSelectTextField" destination="806-Gg-mdo" id="oGR-PP-atN"/>
+                <outlet property="characterSecondTitleLabel" destination="dDq-A8-7xa" id="0Ab-Tr-xAm"/>
+                <outlet property="fightButton" destination="JcL-Qu-2MK" id="uI6-wP-dBe"/>
+                <outlet property="titleLabel" destination="z6R-3k-eG7" id="4aa-kg-Gsd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="on7-9I-iAY">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Battle Arena. ¿Who is the best?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6R-3k-eG7" userLabel="titleLabel">
+                            <rect key="frame" x="16" y="32" width="382" height="25.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                            <color key="textColor" name="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9qW-9j-G2C" userLabel="characterOneView">
+                            <rect key="frame" x="16" y="89.5" width="382" height="102"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Character One:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFc-jn-3K4">
+                                    <rect key="frame" x="16" y="16" width="350" height="20"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" name="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select a character for battling" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K9U-Yx-uGc">
+                                    <rect key="frame" x="16" y="52" width="350" height="18"/>
+                                    <color key="textColor" name="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HYr-Ys-7vp" userLabel="SeparatorView">
+                                    <rect key="frame" x="16" y="68" width="350" height="2"/>
+                                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.17782866380000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="2" id="9Ye-mw-63E"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="HYr-Ys-7vp" firstAttribute="trailing" secondItem="K9U-Yx-uGc" secondAttribute="trailing" id="BaD-aM-L7T"/>
+                                <constraint firstItem="K9U-Yx-uGc" firstAttribute="top" secondItem="XFc-jn-3K4" secondAttribute="bottom" constant="16" id="Hi0-kW-ULh"/>
+                                <constraint firstAttribute="bottom" secondItem="HYr-Ys-7vp" secondAttribute="bottom" constant="32" id="PFC-q4-Lsx"/>
+                                <constraint firstItem="XFc-jn-3K4" firstAttribute="leading" secondItem="9qW-9j-G2C" secondAttribute="leading" constant="16" id="ZOC-tW-n80"/>
+                                <constraint firstItem="K9U-Yx-uGc" firstAttribute="trailing" secondItem="XFc-jn-3K4" secondAttribute="trailing" id="fgb-7Y-0rQ"/>
+                                <constraint firstItem="HYr-Ys-7vp" firstAttribute="bottom" secondItem="K9U-Yx-uGc" secondAttribute="bottom" id="gdi-WA-v7Q"/>
+                                <constraint firstAttribute="trailing" secondItem="XFc-jn-3K4" secondAttribute="trailing" constant="16" id="gqK-IL-ztU"/>
+                                <constraint firstItem="XFc-jn-3K4" firstAttribute="top" secondItem="9qW-9j-G2C" secondAttribute="top" constant="16" id="k86-yg-2vJ"/>
+                                <constraint firstItem="K9U-Yx-uGc" firstAttribute="leading" secondItem="XFc-jn-3K4" secondAttribute="leading" id="yyu-gL-tpP"/>
+                                <constraint firstItem="HYr-Ys-7vp" firstAttribute="leading" secondItem="K9U-Yx-uGc" secondAttribute="leading" id="zkC-zx-zdX"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q06-Um-LKv" userLabel="characterSecondView">
+                            <rect key="frame" x="16" y="223.5" width="382" height="102"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Character Second:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDq-A8-7xa">
+                                    <rect key="frame" x="16" y="16" width="350" height="20"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" name="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select a character for battling" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="806-Gg-mdo">
+                                    <rect key="frame" x="16" y="52" width="350" height="18"/>
+                                    <color key="textColor" name="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uhd-v7-SgD" userLabel="SeparatorView">
+                                    <rect key="frame" x="16" y="68" width="350" height="2"/>
+                                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.17782866380000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="2" id="dug-xc-oYJ"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="Uhd-v7-SgD" secondAttribute="bottom" constant="32" id="ACx-lw-YSg"/>
+                                <constraint firstItem="dDq-A8-7xa" firstAttribute="leading" secondItem="q06-Um-LKv" secondAttribute="leading" constant="16" id="Cxh-id-NHi"/>
+                                <constraint firstItem="806-Gg-mdo" firstAttribute="leading" secondItem="dDq-A8-7xa" secondAttribute="leading" id="MBr-W1-IrW"/>
+                                <constraint firstItem="806-Gg-mdo" firstAttribute="trailing" secondItem="dDq-A8-7xa" secondAttribute="trailing" id="Owa-jh-X1D"/>
+                                <constraint firstItem="Uhd-v7-SgD" firstAttribute="trailing" secondItem="806-Gg-mdo" secondAttribute="trailing" id="XtF-Vf-G7d"/>
+                                <constraint firstItem="Uhd-v7-SgD" firstAttribute="leading" secondItem="806-Gg-mdo" secondAttribute="leading" id="hUV-L0-hMG"/>
+                                <constraint firstItem="dDq-A8-7xa" firstAttribute="top" secondItem="q06-Um-LKv" secondAttribute="top" constant="16" id="lrj-mK-fV4"/>
+                                <constraint firstItem="806-Gg-mdo" firstAttribute="top" secondItem="dDq-A8-7xa" secondAttribute="bottom" constant="16" id="qzz-dy-qCF"/>
+                                <constraint firstItem="Uhd-v7-SgD" firstAttribute="bottom" secondItem="806-Gg-mdo" secondAttribute="bottom" id="srx-UF-dT8"/>
+                                <constraint firstAttribute="trailing" secondItem="dDq-A8-7xa" secondAttribute="trailing" constant="16" id="zLT-W7-fxn"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcL-Qu-2MK">
+                            <rect key="frame" x="16" y="746" width="382" height="40"/>
+                            <color key="backgroundColor" name="primaryColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="6pn-kY-Sxt"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                            <state key="normal" title="Fight!">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="q06-Um-LKv" firstAttribute="trailing" secondItem="9qW-9j-G2C" secondAttribute="trailing" id="1sl-qc-R3F"/>
+                        <constraint firstAttribute="bottom" secondItem="JcL-Qu-2MK" secondAttribute="bottom" constant="32" id="BDG-OR-8zR"/>
+                        <constraint firstAttribute="trailing" secondItem="z6R-3k-eG7" secondAttribute="trailing" constant="16" id="Ckj-di-9Gn"/>
+                        <constraint firstItem="9qW-9j-G2C" firstAttribute="trailing" secondItem="z6R-3k-eG7" secondAttribute="trailing" id="G0Q-hA-WaW"/>
+                        <constraint firstItem="q06-Um-LKv" firstAttribute="leading" secondItem="9qW-9j-G2C" secondAttribute="leading" id="Lzc-vw-NBH"/>
+                        <constraint firstItem="9qW-9j-G2C" firstAttribute="top" secondItem="z6R-3k-eG7" secondAttribute="bottom" constant="32" id="RwX-IX-TSp"/>
+                        <constraint firstItem="9qW-9j-G2C" firstAttribute="leading" secondItem="z6R-3k-eG7" secondAttribute="leading" id="Xv3-3V-Bvt"/>
+                        <constraint firstItem="JcL-Qu-2MK" firstAttribute="leading" secondItem="on7-9I-iAY" secondAttribute="leading" constant="16" id="ZzB-y2-gVH"/>
+                        <constraint firstItem="z6R-3k-eG7" firstAttribute="leading" secondItem="on7-9I-iAY" secondAttribute="leading" constant="16" id="cB9-Mp-Jky"/>
+                        <constraint firstItem="q06-Um-LKv" firstAttribute="top" secondItem="9qW-9j-G2C" secondAttribute="bottom" constant="32" id="pav-sT-XiA"/>
+                        <constraint firstAttribute="trailing" secondItem="JcL-Qu-2MK" secondAttribute="trailing" constant="16" id="rCA-2A-e3U"/>
+                        <constraint firstItem="z6R-3k-eG7" firstAttribute="top" secondItem="on7-9I-iAY" secondAttribute="top" constant="32" id="uYW-wy-bb9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="on7-9I-iAY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="S6q-mo-EnR"/>
+                <constraint firstItem="on7-9I-iAY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="SQs-u2-DZs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="on7-9I-iAY" secondAttribute="trailing" id="s7t-A5-6Qu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="on7-9I-iAY" secondAttribute="bottom" id="sTB-tq-V40"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="121"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="primaryColor">
+            <color red="0.0" green="0.52156862745098043" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColor">
+            <color red="0.36078431372549019" green="0.30588235294117649" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -9,6 +9,34 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>MarvelBattleUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>MarvelCore.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>031F84D424BF5D8E00E1CE3E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>031F84EA24BF5D9000E1CE3E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>031F84F524BF5D9000E1CE3E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

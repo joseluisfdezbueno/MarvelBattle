@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BattleResultViewController" customModule="MarvelBattle" customModuleProvider="target">
+            <connections>
+                <outlet property="closeButton" destination="9m8-A1-MbE" id="LDQ-cA-6TK"/>
+                <outlet property="goToRankingButton" destination="uED-Xz-KzX" id="fTq-nk-lyF"/>
+                <outlet property="titleLabel" destination="pxl-R6-d0u" id="TcS-ja-pkv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="winnerLabel" destination="zAg-lu-0Vf" id="MHl-rQ-Ama"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dhf-QH-Pzb" userLabel="backgroundView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCu-ku-umr">
+                    <rect key="frame" x="64" y="305" width="286" height="286"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uED-Xz-KzX">
+                            <rect key="frame" x="24" y="226" width="238" height="36"/>
+                            <color key="backgroundColor" name="primaryColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="R1G-VC-Udi"/>
+                            </constraints>
+                            <state key="normal" title="Go To Ranking">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Winner is:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxl-R6-d0u">
+                            <rect key="frame" x="24" y="30.5" width="206" height="25.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <color key="textColor" name="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIRST PLAYER!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAg-lu-0Vf">
+                            <rect key="frame" x="67.5" y="130.5" width="151.5" height="25.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                            <color key="textColor" name="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9m8-A1-MbE">
+                            <rect key="frame" x="246" y="18" width="24" height="19.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="jOe-nw-cYA"/>
+                                <constraint firstAttribute="height" constant="24" id="szl-GI-XHZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="tintColor" name="primaryColor"/>
+                            <state key="normal" backgroundImage="xmark" catalog="system"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="9m8-A1-MbE" firstAttribute="leading" secondItem="pxl-R6-d0u" secondAttribute="trailing" constant="16" id="9R4-NV-vME"/>
+                        <constraint firstItem="zAg-lu-0Vf" firstAttribute="centerX" secondItem="hCu-ku-umr" secondAttribute="centerX" id="D9L-3G-OmI"/>
+                        <constraint firstAttribute="trailing" secondItem="uED-Xz-KzX" secondAttribute="trailing" constant="24" id="Fct-3H-asd"/>
+                        <constraint firstItem="9m8-A1-MbE" firstAttribute="top" secondItem="hCu-ku-umr" secondAttribute="top" constant="16" id="H5B-U0-glS"/>
+                        <constraint firstItem="pxl-R6-d0u" firstAttribute="top" secondItem="hCu-ku-umr" secondAttribute="top" constant="30.5" id="Ld2-8T-9D6"/>
+                        <constraint firstAttribute="width" secondItem="hCu-ku-umr" secondAttribute="height" multiplier="1:1" id="Nge-Sz-Y0s"/>
+                        <constraint firstItem="zAg-lu-0Vf" firstAttribute="centerY" secondItem="hCu-ku-umr" secondAttribute="centerY" id="PqC-9F-ex3"/>
+                        <constraint firstAttribute="trailing" secondItem="9m8-A1-MbE" secondAttribute="trailing" constant="16" id="Q60-KT-FdQ"/>
+                        <constraint firstItem="uED-Xz-KzX" firstAttribute="leading" secondItem="hCu-ku-umr" secondAttribute="leading" constant="24" id="QO8-bx-jkb"/>
+                        <constraint firstAttribute="bottom" secondItem="uED-Xz-KzX" secondAttribute="bottom" constant="24" id="lSu-Ex-OKI"/>
+                        <constraint firstItem="pxl-R6-d0u" firstAttribute="leading" secondItem="hCu-ku-umr" secondAttribute="leading" constant="24" id="tNI-Ps-bso"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Dhf-QH-Pzb" secondAttribute="bottom" id="1Or-Ya-6Zk"/>
+                <constraint firstItem="Dhf-QH-Pzb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3uo-d5-UTb"/>
+                <constraint firstItem="hCu-ku-umr" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="6Rs-Cf-11P"/>
+                <constraint firstItem="hCu-ku-umr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="64" id="bFe-0h-W4I"/>
+                <constraint firstItem="hCu-ku-umr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="igJ-sk-ibu"/>
+                <constraint firstAttribute="trailing" secondItem="Dhf-QH-Pzb" secondAttribute="trailing" id="oOF-g4-g4u"/>
+                <constraint firstAttribute="trailing" secondItem="hCu-ku-umr" secondAttribute="trailing" constant="64" id="v6u-A5-vN5"/>
+                <constraint firstItem="Dhf-QH-Pzb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yMg-km-sct"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xmark" catalog="system" width="64" height="56"/>
+        <namedColor name="primaryColor">
+            <color red="0.0" green="0.52156862745098043" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColor">
+            <color red="0.36078431372549019" green="0.30588235294117649" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

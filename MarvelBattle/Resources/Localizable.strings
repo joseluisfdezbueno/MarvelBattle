@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+  MarvelBattle
+
+  Created by Jose Luis Fernandez on 18/07/2020.
+  Copyright © 2020 joseluisfernandezbueno. All rights reserved.
+*/
+
+// Common
+"accept" = "Accept";
+
+// Search View
+"search_view_title" = "Search";
+"search_view_search_bar_placeholder" = "Search your character";
+
+// Arena View
+"arena_view_title" = "Arena";
+"arena_view_title_label" = "Battle Arena. ¿Who is the best?";
+"arena_view_character_one_title_label" = "Character One: ";
+"arena_view_character_second_title_label" = "Character Second: ";
+"arena_view_character_placeholder_text_field" = "Select a character for battling";
+"arena_view_character_fight_button" = "Fight!!";
+
+// Ranking View
+"ranking_view_title" = "Ranking";
+
+// Character Profile View
+"character_pofile_view_title" = "Character Profile";
+"character_profile_view_no_description" = "(This character has no description)";
+
+// RankingTableViewCell
+"ranking_table_view_position" = "Pos: %d";
+"ranking_table_view_power" = "Power: %d";
+
+// BattleResulView
+"battle_result_view_title_label" = "The winner is: ";
+"battle_result_view_winner_is_first" = "FIRST PLAYER!!";
+"battle_result_view_winner_is_second" = "SECOND PLAYER!";
+"battle_result_view_draw" = "DRAW!!";
+"battle_result_view_go_to_ranking_button" = "Go to ranking";
+
+// Errors
+"default_error_alert_title" = "Error";
+"default_error_alert_message" = "An error occurred. Please try again later";
+
